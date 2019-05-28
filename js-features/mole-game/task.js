@@ -17,8 +17,8 @@ if (hole.classList.contains( 'hole_has-mole' )) {
     return lost;
 }
 
-console.log("Убито " + dead.textContent);
-console.log("Промахов " + lost.textContent);
+console.log("Убито " + dead);
+console.log("Промахов " + lost);
 
 if (lost === 5) {
     alert ("Вы проиграли");
