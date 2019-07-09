@@ -1,9 +1,13 @@
-const status = document.getElementById("status");
-let theStartValue = status;
-function arr () {
-    theStartValue -=1;
-  }
-var timerId = setInterval(arr());
-if (status === 0 ) {
-    alert ("Вы победили в конкурсе");
- }
+const congratulations = function() {
+  const timer = document.getElementById("timer");
+  timer.textContent --;
+}
+var timerId = setInterval(congratulations, 1000);
+
+const congratulations1 = function() {
+  alert("Вы победили в конкурсе!");
+  clearInterval(timerId);
+}
+
+setTimeout(congratulations1, 59000);
+
