@@ -1,8 +1,7 @@
-const clicker__counter = document.getElementById("clicker__counter");
-console.log("Всего касаний" + clicker__counter.textContent); 
-const image = document.getElementById("cookie");
-function changeSizes() {
-  image.width = 200;
-  image.height = 200;
-};
-image.onclick = changeSizes;
+const cookie = document.getElementById ("cookie");
+const clicker__counter = document.getElementById ("clicker__counter");
+function changeCount() {
+  clicker__counter.textContent ++;
+  cookie.width = 100;
+}
+cookie.onclick = changeCount;
