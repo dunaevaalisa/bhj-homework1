@@ -1,13 +1,12 @@
+const timer = document.getElementById("timer");
 const congratulations = function() {
-  const timer = document.getElementById("timer");
   timer.textContent --;
+  if (timer.textContent == 0) {
+  alert ("Вы победили в конкурсе!");
+  clearInterval (timerId);
 }
+}
+
 var timerId = setInterval(congratulations, 1000);
 
-const congratulations1 = function() {
-  alert("Вы победили в конкурсе!");
-  clearInterval(timerId);
-}
-
-setTimeout(congratulations1, 59000);
 
